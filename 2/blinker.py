@@ -104,7 +104,7 @@ clk = Wire(name='clk')       # Declare the clock input.
 led = Wire(name='led')       # Declare the LED output.
 blinker(clk, led, 3)         # Instantiate a three-bit blinker and attach I/O signals.
 clk_sim(clk, num_cycles=16)  # Apply 16 clock pulses.
-show_waveforms()             # Look at the waveforms.
+# show_waveforms()             # Look at the waveforms.
 show_text_table()
 
 toVerilog(blinker, clk_i=clk, led_o=led, length=22)
